@@ -22,8 +22,7 @@ function setup() {
   ground = new Ground();
   stand1 = new Stand(390,300,250,10);
   stand2 = new Stand(700,200,200,10);
-
-  rock_img.scale=0.2; 
+  
   //level one
   block1 = new Block(300,275,30,40);
   block2 = new Block(330,275,30,40);
@@ -73,8 +72,7 @@ function draw() {
   imageMode(CENTER);
   // write image() to display the polygon image 
   //use the same x and y position as ball
-  image(rock_img,ball.position.x,ball.position.y)
-  rock_img.scale=0.1
+  image(rock_img,ball.position.x,ball.position.y,40,50)
 
   stroke(0,0,0);
   fill("white");
